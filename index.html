@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Itim&family=Rubik+Wet+Paint&family=Varela&display=swap" rel="stylesheet">        
+</head>
+<body>
+    <div class="bg-[#c5e0e2] h-[100vh] w-[100vw] flex flex-row items-center justify-center gap-10" id="b-0" >
+        <!-- left phone -->
+        <div class="h-[85vh] w-[25vw]  border-[6px] border-[white]  drop-shadow-3xl rounded-[60px] overflow-hidden  shadow-right-lg" >
+            <div class="border-[2px] border-[black] w-[100%] h-[100%] rounded-[60px] overflow-hidden flex flex-col justify-evenly">
+                <div class="bg-[#c5e0e2]  flex flex-col items-center h-[50%] " id="b-1" >
+                    <img src="images/cloudy-15148.svg" class="h-[28vh] w-[80%] mt-5 mb-0" id="p-0">
+                    <div class="flex flex-row justify-evenly">
+                        <!-- //left part -->
+                         <div class="mt-0 pl-4 ">
+                            <h1 class="text-4xl text-[white]  pt-0 position-absolute font-sans " style="text-shadow: 2px 2px 4px rgba(8, 148, 208, 0.7), -2px -2px 4px rgba(8, 148, 208, 0.7), 2px -2px 4px rgba(8, 148, 208, 0.7), -2px 2px 4px rgba(8, 148, 208, 0.7);" id="current_weath">Current Weather</h1>
+                            <img src="images/icons8-line-30.png" class=" mt-0 w-[100%] h-[10%]">
+                         </div>
+                        <!-- //right part -->
+                         <div class="pr-2 pl-2">
+                            <h1 class="text-6xl flex items-center justify-center pt-4  text-[white]" style="text-shadow: 2px 2px 4px rgba(8, 148, 208, 0.7), -2px -2px 4px rgba(8, 148, 208, 0.7), 2px -2px 4px rgba(8, 148, 208, 0.7), -2px 2px 4px rgba(8, 148, 208, 0.7);" id="temp-0">" "</h1>
+                            <p class="text-[white]" style="text-shadow: 2px 2px 4px rgba(8, 148, 208, 0.7), -2px -2px 4px rgba(8, 148, 208, 0.7), 2px -2px 4px rgba(8, 148, 208, 0.7), -2px 2px 4px rgba(8, 148, 208, 0.7)" id="cond-0" >" "</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="top-0">
+                <ul class="text-3xl text-[white] p-3" style="text-shadow: 2px 2px 4px rgba(8, 148, 208, 0.7), -2px -2px 4px rgba(8, 148, 208, 0.7), 2px -2px 4px rgba(8, 148, 208, 0.7), -2px 2px 4px rgba(8, 148, 208, 0.7)">
+                    <li id="h-0">Humidity:</li>
+                    <li id="v-0">Visibility:</li>
+                    <li id="u-0">UV Index:</li>
+                </ul>
+                <h1 class="text-4xl text-[#278287] p-4 pt-0 position-absolute font-serif text-center" id="left-Area">Area</h1>
+            </div>
+            </div>
+            </div>
+            
+        <!-- right phone -->
+        <div class="h-[85vh] w-[40vw] bg-[#a8d5d8] border-[6px] border-[white]  drop-shadow-3xl rounded-[60px] overflow-hidden  shadow-right-lg" id="b-2">
+            <div class="border-[2px] border-[black] w-[100%] h-[100%] rounded-[60px] overflow-hidden">
+               <h1 class="text-[30px] p-5 pr-6 pb-0 font-serif">5-DAY WEATHER</h1>
+               <p class=" pl-4 font-serif text-[30px] top-0" id="right-Area">AREA</p>
+               <!-- grid -->
+               <div class="flex gap-3 justify-evenly">
+                <div class="p-2 gap-2">
+                    <!-- temp -->
+                     <h1 class="text-[30px] font-serif inline-block" id="temp-1">" "</h1>
+                     <div class="flex flex-col bg-[#c5e0e2] h-[300px]  w-[120px] rounded-lg" id="b-3">
+                        <h1 class="font-serif" id="day-1">Day</h1>
+                        <img src="" id="img-1">
+                        <!-- humidity -->
+                        <p class="font-serif" id="cond-1">Humid</p>
+                       <!-- Feels-like -->
+                       <span class="font-serif" id="fl-1">" "</span>
+                        <!-- Visibility -->
+                        <p class="font-serif inline-block" id="v-1">Visibility:</p>
+                       
+                     </div>
+                </div>
+                <div class="p-2 gap-2">
+                    <!-- temp -->
+                     <h1 class="text-[30px] font-serif" id="temp-2">" "</h1>
+                     <div class="flex flex-col bg-[#c5e0e2] h-[300px]  w-[120px] rounded-lg" id="b-4">
+                        <h1 class="font-serif" id="day-2">Day</h1>
+                        <img src="" alt="" id="img-2">
+                        <!-- humidity -->
+                        <p class="font-serif " id="cond-2">Humid</p>
+                       <!-- Feels-like -->
+                       
+                        <span class="font-serif  inline-block" id="fl-2">" "</span>
+                        <!-- Visibility -->
+                        <span class="font-serif" id="v-2">Visibility:</span>
+                       
+                     </div>
+                </div>
+                <div class="p-2 gap-2">
+                    <!-- temp -->
+                     <h1 class="text-[30px] font-serif" id="temp-3">" "</h1>
+                     <div class="flex flex-col bg-[#c5e0e2] h-[300px]  w-[120px] rounded-lg" id="b-5">
+                        <h1 class="font-serif" id="day-3">Day</h1>
+                        <img src="" alt="" id="img-3">
+                        <!-- humidity -->
+                        <p class="font-serif " id="cond-3">Humid</p>
+                       <!-- Feels-like -->
+                       
+                        <span class="font-serif  inline-block" id="fl-3">" "</span>
+                        <!-- Visibility -->
+                        <span class="font-serif" id="v-3">Visibility:</span>
+                       
+                     </div>
+                </div>
+                <div class="p-2 gap-2">
+                    <!-- temp -->
+                     <h1 class="text-[30px] font-serif" id="temp-4">" "</h1>
+                     <div class="flex flex-col bg-[#c5e0e2] h-[300px]  w-[120px] rounded-lg" id="b-6">
+                        <h1 class="font-serif" id="day-4">Day</h1>
+                        <img src="" alt="" id="img-4">
+                        <!-- humidity -->
+                        <p class="font-serif " id="cond-4">Humid</p>
+                       <!-- Feels-like -->
+                       
+                        <span class="font-serif  inline-block" id="fl-4">" "</span>
+                        <!-- Visibility -->
+                        <span class="font-serif" id="v-4">Visibility:</span>
+                       
+                     </div>
+                </div>
+            </div>
+            <!-- input for a city -->
+             <input type="text" class="m-4 p-4 rounded-[20px] border-[2px] font-new" id="locn-input">
+             <button class="font-new border-[2px] p-2 rounded-lg" id="Submit-button">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
